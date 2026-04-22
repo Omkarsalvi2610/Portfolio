@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Omkar Salvi — UI/UX & Web Designer</title>
+<meta name="description" content="Omkar Salvi — Learning UI/UX design. Building websites for local businesses and healthcare providers that look world-class."/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- GRAIN OVERLAY -->
+<div class="grain" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+    <filter id="grain-f">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#grain-f)" opacity="1"/>
+  </svg>
+</div>
+
+<!-- CUSTOM CURSOR -->
+<div id="cursor" role="none"></div>
+
+<!-- MESH BLOBS -->
+<div class="blobs" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+
+<!-- LOADER -->
+<div id="loader" role="progressbar" aria-label="Loading portfolio">
+  <div class="loader-orb"></div>
+  <div class="loader-count">00</div>
+  <div class="loader-status">Initializing...</div>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="logo">OS.</div>
+  <div class="menu-btn">
+    <span class="menu-label">Menu</span>
+    <button class="menu-circle" aria-label="Open navigation menu" id="menu-btn-el">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="4" y1="6" x2="20" y2="6"/>
+        <line x1="4" y1="12" x2="20" y2="12"/>
+        <line x1="4" y1="18" x2="20" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- AVAILABILITY BADGE -->
+<div id="avail-badge" aria-label="Availability status">
+  <span class="avail-dot"></span>
+  <span class="avail-text">Available for freelance</span>
+</div>
+
+<!-- SECTIONS CONTAINER -->
+<main id="sections">
+
+  <!-- HERO -->
+  <section id="hero" class="section" aria-label="Hero">
+    <span class="hero-tag">UI/UX Designer &amp; Web Developer — India</span>
+    <h1 class="hero-title">
+      <span class="solid">Omkar</span>
+      <span class="outline">Salvi.</span>
+    </h1>
+    <p class="hero-sub">Learning UI/UX design. Building websites for local businesses &amp; healthcare providers that actually convert — one pixel at a time.</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section" aria-label="About">
+    <div class="about-grid">
+      <div class="about-left">
+        <h2 class="about-heading">
+          Designer in<br/>
+          <span class="outline">Progress.</span>
+        </h2>
+        <p class="about-body">
+          I'm Omkar — a self-taught UI/UX designer and part-time web developer from India. I build websites for local businesses and healthcare providers that look world-class, powered by AI.
+          <br/><br/>
+          I design in Figma, prototype fast with AI tools like Claude Code &amp; Antigravity, and use AI-assisted workflows to go from idea to live site at a speed most agencies can't match.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <div class="stat-num">2+</div>
+            <div class="stat-label">Live Sites</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Passion</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">Learning</div>
+          </div>
+        </div>
+
+        <!-- TOOLS -->
+        <div class="tools-row">
+          <span class="tool-tag">Figma</span>
+          <span class="tool-tag">Claude Code</span>
+          <span class="tool-tag">Antigravity AI</span>
+          <span class="tool-tag">HTML / CSS / JS</span>
+          <span class="tool-tag">Carrd</span>
+        </div>
+      </div>
+      <div class="about-img-wrap">
+        <img src="omkar.jpg" alt="Portrait of Omkar Salvi, UI/UX Designer" loading="lazy"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="section" aria-label="Selected work">
+    <h2 class="work-title">Work.</h2>
+    <div class="projects-grid">
+
+      <article class="project-card" aria-label="Project: Casa Barbato">
+        <img src="project_01.png" alt="Casa Barbato restaurant website" loading="lazy"/>
+        <div class="project-overlay">
+          <div class="project-meta">
+            <div class="project-cat">Local Business · Restaurant</div>
+            <div class="project-name">Casa Barbato</div>
+            <a href="http://casabarbato.in/" target="_blank" rel="noopener" class="project-link" aria-label="Visit Casa Barbato website">Visit Site ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" aria-label="Project: Dentaire Smile Clinic">
+        <img src="project_02.png" alt="Dentaire Smile Clinic website" loading="lazy"/>
+        <div class="project-overlay">
+          <div class="project-meta">
+            <div class="project-cat">Healthcare · Dental Clinic</div>
+            <div class="project-name">Dentaire Smile</div>
+            <a href="https://dentairesmileclinic.carrd.co/" target="_blank" rel="noopener" class="project-link" aria-label="Visit Dentaire Smile Clinic website">Visit Site ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card project-card--wip" aria-label="Work in progress">
+        <div class="wip-inner">
+          <span class="wip-label">Next Project</span>
+          <p class="wip-sub">Something new is brewing...</p>
+        </div>
+      </article>
+
+      <article class="project-card project-card--wip" aria-label="Work in progress">
+        <div class="wip-inner">
+          <span class="wip-label">Coming Soon</span>
+          <p class="wip-sub">Another local business, another story.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section" aria-label="Contact">
+    <span class="contact-tag">Let's work together</span>
+    <h2 class="contact-title" id="contact-title">Let's Build.</h2>
+    <p class="contact-sub">Got a local business that needs a web presence? A clinic that wants to look premium? I'm your guy.</p>
+    <div class="socials">
+      <!-- Behance placeholder -->
+      <a href="#" class="social-btn" aria-label="Behance profile" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M2 7h6.5a3.5 3.5 0 0 1 0 7H2V7zM2 14h7.5a3.5 3.5 0 0 1 0 7H2v-7z"/>
+          <path d="M14 8h8M15 12c0-2.2 1.8-4 4-4s4 1.8 4 4H15zm0 0h8c0 2.2-1.8 4-4 4s-4-1.8-4-4z"/>
+        </svg>
+      </a>
+      <!-- Instagram placeholder -->
+      <a href="#" class="social-btn" aria-label="Instagram profile" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+        </svg>
+      </a>
+      <!-- LinkedIn placeholder -->
+      <a href="#" class="social-btn" aria-label="LinkedIn profile" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+      <!-- Email -->
+      <a href="mailto:hello@omkarsalvi.com" class="social-btn" aria-label="Send email">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <polyline points="2,4 12,13 22,4"/>
+        </svg>
+      </a>
+    </div>
+    <p class="footer-line">© 2024 Omkar Salvi — Designed with obsession, built with AI</p>
+  </section>
+
+</main>
+
+<!-- SECTION PROGRESS -->
+<div id="progress" aria-label="Section progress">
+  <span class="prog-current">01</span>
+  <div class="prog-line"></div>
+  <span class="prog-total">04</span>
+</div>
+
+<!-- NAV DOTS -->
+<nav id="nav-dots" aria-label="Section navigation">
+  <button class="dot active" aria-label="Go to Hero section"></button>
+  <button class="dot" aria-label="Go to About section"></button>
+  <button class="dot" aria-label="Go to Work section"></button>
+  <button class="dot" aria-label="Go to Contact section"></button>
+</nav>
+
+<!-- SCROLL HINT -->
+<div id="scroll-hint" aria-hidden="true">Scroll to explore</div>
+
+<!-- CIRCULAR NAV OVERLAY -->
+<div id="nav-overlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <button class="nav-close" aria-label="Close navigation menu">Close ✕</button>
+  <div class="nav-links">
+    <button class="nav-link" data-section="0" data-preview="hero">Home</button>
+    <button class="nav-link" data-section="1" data-preview="about">About</button>
+    <button class="nav-link" data-section="2" data-preview="work">Work</button>
+    <button class="nav-link" data-section="3" data-preview="contact">Contact</button>
+  </div>
+  <div class="nav-preview" aria-hidden="true">
+    <img src="project_01.png" data-key="hero" alt=""/>
+    <img src="omkar.jpg" data-key="about" alt=""/>
+    <img src="project_02.png" data-key="work" alt=""/>
+    <img src="project_03.png" data-key="contact" alt=""/>
+  </div>
+</div>
+
+<!-- GSAP CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
